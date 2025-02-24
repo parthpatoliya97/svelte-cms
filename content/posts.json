@@ -1,0 +1,21 @@
+[
+    {
+      "title": "First Post",
+      "date": "2025-02-01",
+      "slug": "first-post",
+      "body": "This is the body of the first post. It is written in Markdown."
+    },
+    {
+      "title": "Second Post",
+      "date": "2025-02-15",
+      "slug": "second-post",
+      "body": "This is the body of the second post. More content goes here."
+    },
+    {
+      "title": "Third Post",
+      "date": "2025-02-24",
+      "slug": "third-post",
+      "body": "This is the body of the third post. Markdown is supported."
+    }
+  ]
+  
