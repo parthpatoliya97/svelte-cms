@@ -1,0 +1,26 @@
+{
+    "metaTags": {
+      "metaTitle": "products page",
+      "metaDescription": "This brief info about our previously created products",
+      "type": "products page details"
+    },
+    "products": [
+      {
+        "id": 1,
+        "title": "JupiterMeet",
+        "description": "My sample desc",
+        "image": "https://thertclabs.com/jupitermeet/images/logo.png",
+        "ctaText": "Check out",
+        "ctaLink": "jupitermeet"
+      },
+      {
+        "id": 2,
+        "title": "JupiterMeet Pro",
+        "description": "Sample description",
+        "image": "https://thertclabs.com/jupitermeet-pro/images/logo.png",
+        "ctaText": "Check out Pro",
+        "ctaLink": "jupitermeet-pro"
+      }
+    ]
+  }
+  

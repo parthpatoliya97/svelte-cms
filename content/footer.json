@@ -1,0 +1,69 @@
+{
+    "footer": {
+        "data": [
+            {
+                "title": "Home",
+                "link": "https://example.com/home"
+            },
+            {
+                "title": "Features",
+                "link": "https://example.com/features"
+            },
+            {
+                "title": "Pricing",
+                "link": "https://example.com/pricing"
+            },
+            {
+                "title": "Documentation",
+                "link": "https://example.com/documentation"
+            },
+            {
+                "title": "Contact Us",
+                "link": "https://example.com/contact"
+            },
+            {
+                "title": "FAQs",
+                "link": "https://example.com/faqs"
+            },
+            {
+                "title": "Company Information",
+                "link": "https://example.com/company"
+            }
+        ],
+        "aboutUs": {
+            "description": "JupiterMeet is dedicated to providing innovative solutions for seamless communication and collaboration."
+        },
+        "contactDetails": {
+            "email": "hello@jupiters.tech",
+            "supportEmail": "support@jupiters.tech"
+        },
+        "socialMediaLinks": [
+            {
+                "title": "Facebook",
+                "link": "https://facebook.com/jupitermeet",
+                "icon": "facebook_icon.png"
+            },
+            {
+                "title": "Twitter",
+                "link": "https://twitter.com/jupitermeet",
+                "icon": "twitter_icon.png"
+            },
+            {
+                "title": "LinkedIn",
+                "link": "https://linkedin.com/company/jupitermeet",
+                "icon": "linkedin_icon.png"
+            },
+            {
+                "title": "Instagram",
+                "link": "https://instagram.com/jupitermeet",
+                "icon": "instagram_icon.png"
+            }
+        ],
+        "copyrightInformation": {
+            "text": "© 2025 JupiterMeet. All Rights Reserved."
+        },
+        "branding": {
+            "logo": "jupitermeet.png"
+        }
+    }
+}

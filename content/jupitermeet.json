@@ -1,0 +1,28 @@
+{
+    "metaTags": {
+      "metaTitle": "JupiterMeet page",
+      "metaDescription": "This is info about the JupiterMeet page",
+      "type": "jupitermeet page"
+    },
+    "hero": {
+      "title": "JupiterMeet",
+      "description": "Host Your Own Video Conferencing Solution!",
+      "image": "https://th.bing.com/th/id/OIP.i_r1HV7ZqLnIv3U9rpuFTQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "primary-color": "#555555",
+      "ctas": [
+        {
+          "id": "1",
+          "title": "Buy Now",
+          "link": "https://example.com/buy",
+          "isPrimary": true
+        },
+        {
+          "id": "2",
+          "title": "View Demo",
+          "link": "https://example.com/demo",
+          "isPrimary": false
+        }
+      ]
+    }
+  }
+  
