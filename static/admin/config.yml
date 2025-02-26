@@ -7,12 +7,107 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "prodcuts"
-    label: "Products"
-    folder: "content/product.json"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "products"
+    label: "Products Page"
+    files:
+      - name: "product"
+        label: "Product"
+        file: "content/product.json"
+        fields:
+          - label: "Meta Tags"
+            name: "metaTags"
+            widget: "object"
+            fields:
+              - { label: "Meta Title", name: "metaTitle", widget: "string" }
+              - { label: "Meta Description", name: "metaDescription", widget: "text" }
+              - { label: "Type", name: "type", widget: "string" }
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string" }
+
+  - name: "jupitermeet"
+    label: "JupiterMeet"
+    files:
+      - name: "jupitermeet"
+        label: "JupiterMeet"
+        file: "content/jupitermeet.json"
+        fields:
+          - label: "Meta Tags"
+            name: "metaTags"
+            widget: "object"
+            fields:
+              - { label: "Meta Title", name: "metaTitle", widget: "string" }
+              - { label: "Meta Description", name: "metaDescription", widget: "text" }
+              - { label: "Type", name: "type", widget: "string" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Primary Color", name: "primary-color", widget: "color" }
+              - label: "CTA Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Is Primary", name: "isPrimary", widget: "boolean" }
+
+  - name: "jupitermeet-pro"
+    label: "JupiterMeet Pro"
+    files:
+      - name: "jupitermeet-pro"
+        label: "JupiterMeet Pro"
+        file: "content/jupitermeet-pro.json"
+        fields:
+          - label: "Meta Tags"
+            name: "metaTags"
+            widget: "object"
+            fields:
+              - { label: "Meta Title", name: "metaTitle", widget: "string" }
+              - { label: "Meta Description", name: "metaDescription", widget: "text" }
+              - { label: "Type", name: "type", widget: "string" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Primary Color", name: "primary-color", widget: "color" }
+              - label: "CTA Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Is Primary", name: "isPrimary", widget: "boolean" }
+
+  - name: "home"
+    label: "Home"
+    files:
+      - name: "home"
+        label: "Home JSON"
+        file: "content/home.json"
+        fields:
+          - label: "Meta Tags"
+            name: "metaTags"
+            widget: "object"
+            fields:
+              - { label: "Meta Title", name: "metaTitle", widget: "string" }
+              - { label: "Meta Description", name: "metaDescription", widget: "text" }
+              - { label: "Type", name: "type", widget: "string" }
+         
+
+ 

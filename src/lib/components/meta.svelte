@@ -1,8 +1,6 @@
 <!-- <script>
-    import { page } from "$app/stores";
     export let metaTags
     const {metaTitle, metaDescription,type} = metaTags;
-    $: url = $page.url.href;
  </script>
  
  <svelte:head>
@@ -16,7 +14,7 @@
          "@type": "${type}",
            "name": "${metaTitle}",
            "description": "${metaDescription}",
-           "url": "${url}",
+           
          }
        </script>}
  </svelte:head> -->

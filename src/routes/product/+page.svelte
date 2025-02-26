@@ -12,8 +12,12 @@
 <!-- <Meta {metaTags}/> -->
 <ul>
     {#each products as product }
-    <li>{product.title}</li>
-    <li>{product.description}</li>
-    <a class="text-blue-800" href={`/product/${product.ctaLink}`}>{product.ctaText}</a>    
+    <li>
+        <h2>{product.title}</h2>
+        <p>{product.description}</p>
+        <img src={import.meta.env.VITE_BASE_URL + product.image} alt="{product.title} image" loading="lazy">
+
+        <a class="text-blue-800" href={`/product/${product.ctaLink}`}>{product.ctaText}</a>
+    </li>    
     {/each}
 </ul>

@@ -1,26 +1,41 @@
 {
-    "metaTags": {
-      "metaTitle": "products page",
-      "metaDescription": "This brief info about our previously created products",
-      "type": "products page details"
+  "metaTags": {
+    "metaTitle": "products page",
+    "metaDescription": "This brief info about our previously created products",
+    "type": "products page details"
+  },
+  "products": [
+    {
+      "id": 1,
+      "title": "JupiterMeet",
+      "description": "My sample desc",
+      "image": "/uploads/data-security.jpg",
+      "ctaText": "Check out",
+      "ctaLink": "jupitermeet"
     },
-    "products": [
-      {
-        "id": 1,
-        "title": "JupiterMeet",
-        "description": "My sample desc",
-        "image": "https://thertclabs.com/jupitermeet/images/logo.png",
-        "ctaText": "Check out",
-        "ctaLink": "jupitermeet"
-      },
-      {
-        "id": 2,
-        "title": "JupiterMeet Pro",
-        "description": "Sample description",
-        "image": "https://thertclabs.com/jupitermeet-pro/images/logo.png",
-        "ctaText": "Check out Pro",
-        "ctaLink": "jupitermeet-pro"
-      }
-    ]
-  }
-  
+    {
+      "id": 2,
+      "title": "JupiterMeet Pro",
+      "description": "Sample description",
+      "image": "/uploads/data-security.jpg",
+      "ctaText": "Check out Pro",
+      "ctaLink": "jupitermeet-pro"
+    },
+    {
+      "id": 3,
+      "title": "jupiterlite",
+      "description": "this is jupiterlite version",
+      "image": "/uploads/data-security.jpg",
+      "ctaText": "chech out lite",
+      "ctaLink": "jupiterlite"
+    },
+    {
+      "id": 4,
+      "title": "jupiterheavy",
+      "description": "this is jupiterheavy page",
+      "image": "/uploads/data-security.jpg",
+      "ctaText": "check jupiterheavy",
+      "ctaLink": "jupiterheavy"
+    }
+  ]
+}
