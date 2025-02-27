@@ -16,7 +16,7 @@ collections:
         file: "content/home.json"
         fields:
           - label: "metaTags"
-            name: "metaTags"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "slug", name: "slug", widget: "string" }
