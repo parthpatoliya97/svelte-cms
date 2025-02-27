@@ -272,79 +272,74 @@ collections:
                        - {label: "Target", name: "target", widget: "string"}
                        - {label: "Image", name: "image", widget: "image"}
               
-
-  - label: "header"
-    name: "header"
+  - label: "Header & Footer"
+    name: "header-footer"
     create: true
     files:
-      - label: "header"
-        name: "header"
+      - label: "Header & Footer Content"
+        name: "header-footer"
         file: "content/header-footer.json"
         fields:
-        - label: "Logo"
-          name: "logo"
-          widget: "object"
-          fields:
-            - { label: "Logo Image", name: "image", widget: "image" }
-            - { label: "Alt Text", name: "altText", widget: "string" }
-
-        - label: "Menu Items"
-          name: "menuItems"
-          widget: "list"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Target", name: "target", widget: "string", required: false }
-            - label: "Submenu"
-              name: "submenu"
-              widget: "list"
-              required: false
-              fields:
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Target", name: "target", widget: "string" }
-
-        - label: "CTA Button"
-          name: "cta"
-          widget: "object"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Target", name: "target", widget: "string" }
-
-
-  - label: "footer"  
-    name: "footer"
-    create: true
-    files:
-      - label: "footer"
-        name: "footer" 
-        file: "content/header-footer.json"
-        fields:
-          - label: "logo"
-            name: "Logo"
+          - label: "Header"
+            name: "header"
             widget: "object"
             fields:
-              - {label: "image",name: "image",widget: "image"}
-              - {label: "Alt Text",name: "alt",widget: "string"}
-              - {label: "description",name: "description",widget: "string"}
-          - label: "socialLinks"
-            name: "socialLinks"
-            widget: "list"
-            fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "target",name: "target",widget: "string"}
-              - {label: "icon",name: "icon",widget: "string"}
-          - label: "Menu Items"
-            name: "menuItems"
-            widget: "list"
-            fields:
-              - {label: "title",name: "title",widget: "string"}
-              - label: "Submenu"
-                name: "submenu"
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - { label: "Logo Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "altText", widget: "string" }
+              - label: "Menu Items"
+                name: "menuItems"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget :"string"}
-                  - {label: "target",name: "target",widget: "string"}
-          - label: "copyright"
-            name: "copyright"
-            widget: "string"
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Target", name: "target", widget: "string", required: false }
+                  - label: "Submenu"
+                    name: "submenu"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Target", name: "target", widget: "string" }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Target", name: "target", widget: "string" }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
             fields:
-              - {label: "copyright",name: "copyright",widget: "string"}
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Alt Text", name: "alt", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+              - label: "Social Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Target", name: "target", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+              - label: "Menu Items"
+                name: "menuItems"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - label: "Submenu"
+                    name: "submenu"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Target", name: "target", widget: "string"}
+              - label: "Copyright"
+                name: "copyright"
+                widget: "string"
+                fields:
+                - {label: "copyright",name: "copyright",widget: "string"}
