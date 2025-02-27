@@ -53,7 +53,7 @@ collections:
                 name: "images"
                 widget: "list"
                 fields:
-                  - {label: "image",name: "src",widget: "string"}
+                  - {label: "image",name: "src",widget: "image"}
                   - {label: "altText",name: "alt",widget: "string"}
 
           - label: "services"
@@ -71,7 +71,7 @@ collections:
                   - {label: "description",name: "description",widget: "text"}
                   - { label: "Background Color", name: "bgColor", widget: "string" }
                   - {label: "target",name: "target",widget: "text"}
-                  - {label: "icon",name: "icon",widget: "text"}
+                  - {label: "icon",name: "icon",widget: "image"}
 
           - label: "products"
             name: "products"
@@ -110,7 +110,7 @@ collections:
               - {label: "label",name: "label",widget: "string"}
               - {label: "title",name: "title",widget: "string"}
               - {label: "description",name: "description",widget: "text"}
-              - {label: "bgImage",name: "bgImage",widget: "string"}
+              - {label: "bgImage",name: "bgImage",widget: "image"}
               - {label: "altText",name: "altText",widget: "string"}
               - label: "data"
                 name: "data"
@@ -156,7 +156,7 @@ collections:
                   - {label: "description",name: "description",widget: "text"}
                   - {label: "target",name: "target",widget: "string"}
                   - { label: "bhColor", name: "bgColor", widget: "string" }
-                  - {label: "icon",name: "icon",widget: "text"}
+                  - {label: "icon",name: "icon",widget: "image"}
 
           - label: "whyChooseUs"
             name: "whyChooseUs"
@@ -210,7 +210,7 @@ collections:
                   - {label: "title",name: "title",widget: "string"}
                   - {label: "description",name: "description",widget: "text"}
                   - {label: "bgColor", name: "bgColor", widget: "string"}
-                  - {label: "icon",name: "icon",widget: "text"}
+                  - {label: "icon",name: "icon",widget: "image"}
 
           - label: "compliance"
             name: "compliance"
