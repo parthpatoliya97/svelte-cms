@@ -8,23 +8,27 @@ public_folder: "/images"
 
 collections:
   - name: "Home"
-    label: "Home"
+    label: "Home Page"
     create: true
     files:
-      - label: "Home"
-        name: "Home"
+      - label: "Meta Information Section"
+        name: "meta"
         file: "content/home.json"
         fields:
-          - label: "metaTags"
+          - label: "Meta Configuration"
             name: "meta"
             widget: "object"
             fields:
-              - { label: "slug", name: "slug", widget: "string" }
-              - { label: "pageTitle", name: "pageTitle", widget: "string" }
-              - { label: "metaTitle", name: "metaTitle", widget: "string" }
-              - { label: "MetaDescription", name: "description", widget: "text" }
-          
-          - label: "hero"
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Page Title", name: "pageTitle", widget: "string" }
+              - { label: "Meta Title", name: "metaTitle", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/home.json"
+        fields:
+          - label: "Hero details"
             name: "hero"
             widget: "object"
             fields:
@@ -32,8 +36,7 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Background Color", name: "bgColor", widget: "string" }
-             
-              - label: "ctas"
+              - label: "CTA Buttons"
                 name: "ctas"
                 widget: "list"
                 fields:
@@ -42,245 +45,292 @@ collections:
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Is Primary", name: "isPrimary", widget: "boolean" }
 
-          - label: "logos"
-            name: "logos"
-            widget: "object"
-            fields:
-              - {label: "Title",name: "title",widget: "string"}
-              - {label: "Description",name: "description",widget: "text"}
-              - { label: "Background Color", name: "bgColor", widget: "string" }
-              - label: "images"
-                name: "images"
-                widget: "list"
-                fields:
-                  - {label: "image",name: "src",widget: "image"}
-                  - {label: "altText",name: "alt",widget: "string"}
-
-          - label: "services"
+      - label: "Services Section"
+        name: "services"
+        file: "content/home.json"
+        fields:
+          - label: "Services details"
             name: "services"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Service Items"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
                   - { label: "Background Color", name: "bgColor", widget: "string" }
-                  - {label: "target",name: "target",widget: "text"}
-                  - {label: "icon",name: "icon",widget: "image"}
+                  - { label: "Target", name: "target", widget: "text" }
+                  - { label: "Icon", name: "icon", widget: "image" }
 
-          - label: "products"
+      - label: "Products Section"
+        name: "products"
+        file: "content/home.json"
+        fields:
+          - label: "Products details"
             name: "products"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Products List"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
-                  - {label: "image",name: "image",widget: "image"}
-                  - {label: "altText",name: "alt",widget: "string"}
-                  - {label: "target",name: "target",widget: "string"}
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+                  - { label: "Target", name: "target", widget: "string" }
 
-          - label: "Tech"
-            name: "Tech"
+      - label: "Tech Section"
+        name: "tech"
+        file: "content/home.json"
+        fields:
+          - label: "Tech details"
+            name: "tech"
             widget: "object"
             fields:
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Tech Images"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "image",name: "image",widget: "string"}
-                  - {label: "altText",name: "alt",widget: "string"}
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
 
-          - label: "stats"
+      - label: "Stats Section"
+        name: "stats"
+        file: "content/home.json"
+        fields:
+          - label: "Stats details"
             name: "stats"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - {label: "bgImage",name: "bgImage",widget: "image"}
-              - {label: "altText",name: "altText",widget: "string"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Image", name: "bgImage", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Stats Data"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "string"}
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
 
-          - label: "worldDominance"
+      - label: "World Dominance Section"
+        name: "worldDominance"
+        file: "content/home.json"
+        fields:
+          - label: "World Dominance details"
             name: "worldDominance"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - {label: "bgImage",name: "bgImage",widget: "image"}
-              - {label: "altText",name: "alt",widget: "string"}
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Image", name: "bgImage", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" } 
 
-          - label: "showcase"
+      - label: "Showcase Section"
+        name: "showcase"
+        file: "content/home.json"
+        fields:
+          - label: "Showcase details"
             name: "showcase"
             widget: "object"
             fields:
-              - label: "images"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Background Color", name: "bgColor", widget: "string" }
+              - label: "Showcase Images"
                 name: "images"
                 widget: "list"
                 fields:
-                  - {label: "image",name: "image",widget: "image"}
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Background Color", name: "bgColor", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
 
-          - label : "industries"
+      - label: "Industries Section"
+        name: "industries"
+        file: "content/home.json"
+        fields:
+          - label: "Industries details"
             name: "industries"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Industries List"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
-                  - {label: "target",name: "target",widget: "string"}
-                  - { label: "bhColor", name: "bgColor", widget: "string" }
-                  - {label: "icon",name: "icon",widget: "image"}
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Target", name: "target", widget: "string" }
+                  - { label: "Background Color", name: "bgColor", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "image" }
 
-          - label: "whyChooseUs"
+      - label: "Why Choose Us Section"
+        name: "whyChooseUs"
+        file: "content/home.json"
+        fields:
+          - label: "Why Choose Us details"
             name: "whyChooseUs"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - {label: "bgColor", name: "bgColor", widget: "string"}
-              - label: "demoImages"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Color", name: "bgColor", widget: "string" }
+              - label: "Demo Images"
                 name: "demoImages"
                 widget: "list"
                 fields:
-                  - {label: "demoImage",name: "image",widget: "image"}
-              - label: "data"
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Features List"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "ID",name: "id",widget: "number"}
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
-                  - {label: "bgColor", name: "bgColor", widget: "string"} 
+                  - { label: "ID", name: "id", widget: "number" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Background Color", name: "bgColor", widget: "string" }
 
-          - label : "testimonials"
-            name : "testimonials"
+      - label: "Testimonials Section"
+        name: "testimonials"
+        file: "content/home.json"
+        fields:
+          - label: "Testimonials details"
+            name: "testimonials"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - {label: "bgColor", name: "bgColor", widget: "string"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Color", name: "bgColor", widget: "string" }
+              - label: "Testimonials List"
                 name: "data"
                 widget: "list"
-                fields: 
-                  - {label: "ID",name: "id",widget: "number"}
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
-                  - {label: "image",name: "image",widget: "image"}
+                fields:
+                  - { label: "ID", name: "id", widget: "number" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
 
-          - label: "coreValues"
+      - label: "Core Values Section"
+        name: "coreValues"
+        file: "content/home.json"
+        fields:
+          - label: "Core Values details"
             name: "coreValues"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Values List"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "description",name: "description",widget: "text"}
-                  - {label: "bgColor", name: "bgColor", widget: "string"}
-                  - {label: "icon",name: "icon",widget: "image"}
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Background Color", name: "bgColor", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "image" }
 
-          - label: "compliance"
+      - label: "Compliance Section"
+        name: "compliance"
+        file: "content/home.json"
+        fields:
+          - label: "Compliance details"
             name: "compliance"
             widget: "object"
             fields:
-              - {label: "gdpr",name: "gdpr",widget: "string"}
+              - { label: "GDPR", name: "gdpr", widget: "string" }
 
-          - label: "faq"
+      - label: "FAQ Section"
+        name: "faq"
+        file: "content/home.json"
+        fields:
+          - label: "FAQ details"
             name: "faq"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "icon",name: "icon",widget: "image"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "FAQ questions and Answers"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Background Color", name: "bgColor", widget: "string" }
+              - label: "Questions and Answers"
                 name: "qa"
                 widget: "list"
                 fields:
-                  - {label: "question",name: "question",widget: "string"}
-                  - {label: "answer",name: "answer",widget: "text"}
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "string" }
 
-          - label: "CTA"
+      - label: "CTA Section"
+        name: "cta"
+        file: "content/home.json"
+        fields:
+          - label: "CTA details"
             name: "cta"
             widget: "object"
             fields:
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - { label: "Primary Button Title", name: "primaryButtonTitle", widget: "string" }
               - { label: "Primary Button Target", name: "primaryButtonTarget", widget: "string" }
               - { label: "Secondary Button Title", name: "secondaryButtonTitle", widget: "string" }
               - { label: "Secondary Button Target", name: "secondaryButtonTarget", widget: "string" }
 
-          - label : "blogs"
-            name : "blogs"
+      - label: "Blogs Section"
+        name: "blogs"
+        file: "content/home.json"
+        fields:
+          - label: "Blogs details"
+            name: "blogs"
             widget: "object"
             fields:
-              - {label: "label",name: "label",widget: "string"}
-              - {label: "title",name: "title",widget: "string"}
-              - {label: "description",name: "description",widget: "text"}
-              - label: "data"
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Blog Posts"
                 name: "data"
                 widget: "list"
                 fields:
-                  - {label: "image",name: "image",widget: "image"}
-                  - {label: "altText",name: "alt",widget: "text"}
-                  - {label: "date",name: "date",widget: "date"}
-                  - {label: "display date",name: "dateDisplay",widget: "string"}
-                  - {label: "category",name: "category",widget: "string"}
-                  - {label: "title",name: "title",widget: "string"}
-                  - {label: "target",name: "target",widget: "string"}
-                  - {label: "excerpt",name: "excerpt",widget: "text"}
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "text" }
+                  - { label: "Date", name: "date", widget: "date" }
+                  - { label: "Display Date", name: "dateDisplay", widget: "string" }
+                  - { label: "Category", name: "category", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Target", name: "target", widget: "string" }
+                  - { label: "Excerpt", name: "excerpt", widget: "text" }
                   - label: "Author"
                     name: "author"
                     widget: "object"
                     fields:
-                       - {label: "Name", name: "name", widget: "string"}
-                       - {label: "Role", name: "role", widget: "string"}
-                       - {label: "Target", name: "target", widget: "string"}
-                       - {label: "Image", name: "image", widget: "image"}
+                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Role", name: "role", widget: "string" }
+                      - { label: "Target", name: "target", widget: "string" }
+                      - { label: "Image", name: "image", widget: "image" }
+
+
+
+
               
   - label: "Header & Footer"
     name: "header-footer"
     create: true
     files:
-      - label: "Header & Footer Content"
-        name: "header-footer"
+      - label: "Header Section"
+        name: "header"
         file: "content/header-footer.json"
         fields:
-          - label: "Header"
+          - label: "Header details"
             name: "header"
             widget: "object"
             fields:
@@ -309,7 +359,11 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Target", name: "target", widget: "string" }
-          - label: "Footer"
+      - label: "Footer Section"
+        name: "footer"
+        file: "content/header-footer.json"
+        fields:
+          - label: "Footer details"
             name: "footer"
             widget: "object"
             fields:
@@ -343,3 +397,10 @@ collections:
                 widget: "string"
                 fields:
                 - {label: "copyright",name: "copyright",widget: "string"}
+
+
+
+  
+              
+              
+   
